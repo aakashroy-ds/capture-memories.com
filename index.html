@@ -3,70 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+    <title>Drone Photography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav {
-            text-align: center;
-            background-color: #444;
-            padding: 10px;
-        }
-        nav a {
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?drone,landscape') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            padding: 20px;
             text-align: center;
+            position: relative;
+            flex-direction: column;
         }
-        footer {
-            background-color: #333;
-            color: #fff;
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 150px;
+        }
+        .services {
+            padding: 60px 0;
+            background: white;
+        }
+        .service-box {
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
+            padding: 30px;
+            transition: 0.3s;
+        }
+        .service-box:hover {
+            background: #007bff;
+            color: white;
+            transform: scale(1.05);
+            border-radius: 10px;
+        }
+        .portfolio img {
             width: 100%;
-            bottom: 0;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .portfolio img:hover {
+            transform: scale(1.05);
+        }
+        .contact {
+            background: #007bff;
+            color: white;
+            padding: 60px 0;
+        }
+        .contact input, .contact textarea {
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            z-index: 999;
         }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>Welcome to My Website</h1>
+    <!--<div class="overlay">Website Under Construction</div>-->
+    <header class="hero">
+        <img src="images/logo.png" alt="Website Logo" class="logo">
+        <div class="hero-content">
+            <h1 class="display-4">Capture the World from Above</h1>
+            <p class="lead">Professional Aerial Photography & Videography</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Get in Touch</a>
+        </div>
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
+    <section class="services text-center">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 service-box">
+                    <i class="fas fa-camera fa-3x"></i>
+                    <h4>Aerial Photography</h4>
+                    <p>Capture stunning high-resolution images from above.</p>
+                </div>
+                <div class="col-md-4 service-box">
+                    <i class="fas fa-video fa-3x"></i>
+                    <h4>4K Videography</h4>
+                    <p>Professional video recording with cinematic quality.</p>
+                </div>
+                <div class="col-md-4 service-box">
+                    <i class="fas fa-map fa-3x"></i>
+                    <h4>Survey & Mapping</h4>
+                    <p>Accurate aerial mapping for businesses and projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="content">
-        <h2>About Us</h2>
-        <p>This is a simple website template to get you started. You can customize the text and structure as needed.</p>
-    </div>
+    <section class="portfolio text-center">
+        <div class="container">
+            <h2>Our Work</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/Img1.jpg" alt="Portfolio Image">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/Img2.jpg" alt="Portfolio Image">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/Img3.jpg" alt="Portfolio Image">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 My Website. All rights reserved.</p>
-    </footer>
-
+    <section id="contact" class="contact text-center">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button class="btn btn-light">Send Message</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
