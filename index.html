@@ -10,6 +10,22 @@
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+        }
+        .logo {
+            width: 150px;
         }
         .hero {
             background: url('https://source.unsplash.com/1600x900/?drone,landscape') center/cover no-repeat;
@@ -33,15 +49,8 @@
             position: relative;
             z-index: 2;
         }
-        .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 150px;
-        }
-        .services {
+        .services, .portfolio, .contact {
             padding: 60px 0;
-            background: white;
         }
         .service-box {
             text-align: center;
@@ -65,7 +74,6 @@
         .contact {
             background: #007bff;
             color: white;
-            padding: 60px 0;
         }
         .contact input, .contact textarea {
             border-radius: 5px;
