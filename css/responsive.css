@@ -1,0 +1,152 @@
+/* Tablet Breakpoint (768px) */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .destinations-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        min-width: auto;
+    }
+}
+
+/* Mobile Breakpoint (480px) */
+@media (max-width: 480px) {
+    :root {
+        --spacing-unit: 0.75rem;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        gap: 0;
+        padding: 2rem 0;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        padding: 0.75rem 0;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 0.75rem 0;
+    }
+
+    .hero {
+        height: 400px;
+        margin-top: 60px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .section {
+        padding: 3rem 1rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-header p {
+        font-size: 0.95rem;
+    }
+
+    .destinations-grid,
+    .blog-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-card,
+    .blog-card {
+        border-radius: 12px;
+    }
+
+    .destination-image,
+    .blog-image {
+        height: 200px;
+    }
+
+    .destination-content,
+    .blog-content {
+        padding: 1.5rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .hero-title {
+        font-size: 5rem;
+    }
+
+    .section-header h2 {
+        font-size: 3rem;
+    }
+}
