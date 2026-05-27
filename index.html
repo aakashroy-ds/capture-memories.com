@@ -3,165 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            z-index: 1000;
-        }
-        .logo {
-            width: 150px;
-        }
-        .hero {
-            background: url('https://source.unsplash.com/1600x900/?drone,landscape') center/cover no-repeat;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            position: relative;
-            flex-direction: column;
-        }
-        .hero::after {
-            content: '';
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-        .services, .portfolio, .contact {
-            padding: 60px 0;
-        }
-        .service-box {
-            text-align: center;
-            padding: 30px;
-            transition: 0.3s;
-        }
-        .service-box:hover {
-            background: #007bff;
-            color: white;
-            transform: scale(1.05);
-            border-radius: 10px;
-        }
-        .portfolio img {
-            width: 100%;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-        .portfolio img:hover {
-            transform: scale(1.05);
-        }
-        .contact {
-            background: #007bff;
-            color: white;
-        }
-        .contact input, .contact textarea {
-            border-radius: 5px;
-            border: none;
-            padding: 10px;
-            width: 100%;
-            margin-bottom: 10px;
-        }
-        .overlay {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 2rem;
-            font-weight: bold;
-            z-index: 999;
-        }
-    </style>
+    <meta name="description" content="Capture Memories - A premium travel blogging platform">
+    <title>Capture Memories - Travel Stories & Adventures</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <div class="overlay">Website Under Construction</div>
-    
-    <div class="navbar">
-        <img src="Images/logo.png" alt="Website Logo" class="logo">
-    </div>
-    
-    <header class="hero">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Capture Memories" class="logo-img">
+                </a>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="pages/destinations.html" class="nav-link">Destinations</a></li>
+                    <li><a href="pages/blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="pages/gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="pages/about.html" class="nav-link">About</a></li>
+                    <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="hero-content">
-            <h1 class="display-4">Capture-Memories</h1>
-            <p class="lead">Photography & Cinematography</p>
-            <a href="#contact" class="btn btn-primary btn-lg">Get in Touch</a>
+            <h1 class="hero-title fade-in-up">Capture Your Adventures</h1>
+            <p class="hero-subtitle fade-in-up" style="animation-delay: 0.2s;">Discover the world through stunning travel stories and breathtaking moments</p>
+            <a href="pages/destinations.html" class="cta-button fade-in-up" style="animation-delay: 0.4s;">Explore Destinations</a>
         </div>
-    </header>
+        <div class="hero-overlay"></div>
+    </section>
 
-    <section class="services text-center">
+    <!-- Featured Destinations -->
+    <section class="section featured-destinations">
         <div class="container">
-            <h2>Our Services</h2>
-            <div class="row">
-                <div class="col-md-4 service-box">
-                    <i class="fas fa-camera fa-3x"></i>
-                    <h4>Aerial Photography</h4>
-                    <p>Capture stunning high-resolution images from above.</p>
+            <div class="section-header">
+                <h2>Featured Destinations</h2>
+                <p>Handpicked travel experiences from around the globe</p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card" data-aos="fade-up">
+                    <div class="destination-image" style="background-image: linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%), url('assets/images/Img1.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="destination-content">
+                        <h3>Scotish Highlands</h3>
+                        <p>Experience Highlands and ancient castles</p>
+                        <a href="pages/destinations.html" class="read-more">Learn More →</a>
+                    </div>
                 </div>
-                <div class="col-md-4 service-box">
-                    <i class="fas fa-video fa-3x"></i>
-                    <h4>4K Videography</h4>
-                    <p>Professional video recording with cinematic quality.</p>
+                <div class="destination-card" data-aos="fade-up">
+                    <div class="destination-image" style="background-image: linear-gradient(135deg, rgba(240, 147, 251, 0.3) 0%, rgba(245, 87, 108, 0.3) 100%), url('assets/images/Img3.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="destination-content">
+                        <h3>Swiss Alps</h3>
+                        <p>Majestic mountains and charming villages</p>
+                        <a href="pages/destinations.html" class="read-more">Learn More →</a>
+                    </div>
                 </div>
-                <div class="col-md-4 service-box">
-                    <i class="fas fa-map fa-3x"></i>
-                    <h4>Survey & Mapping</h4>
-                    <p>Accurate aerial mapping for businesses and projects.</p>
+                <div class="destination-card" data-aos="fade-up">
+                    <div class="destination-image" style="background-image: linear-gradient(135deg, rgba(79, 172, 254, 0.3) 0%, rgba(0, 242, 254, 0.3) 100%), url('assets/images/Img2.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="destination-content">
+                        <h3>London City</h3>
+                        <p>Explore the historic landmarks and vibrant culture of London.</p>
+                        <a href="pages/destinations.html" class="read-more">Learn More →</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="portfolio text-center">
+    <!-- Latest Blog Posts -->
+    <section class="section latest-blog">
         <div class="container">
-            <h2>Our Work</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="Images/Img1.jpg" alt="Portfolio Image">
+            <div class="section-header">
+                <h2>Latest Stories</h2>
+                <p>Immerse yourself in our recent travel adventures</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card" data-aos="fade-up">
+                    <div class="blog-image" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%), url('assets/images/Img3.jpg');"></div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 15, 2025</span>
+                        <h3>Wandering Through Tokyo Streets</h3>
+                        <p>Discover hidden gems and local culture in Japan's bustling capital city.</p>
+                        <a href="pages/blog.html" class="read-more">Read Story →</a>
+                    </div>
+                </article>
+                <article class="blog-card" data-aos="fade-up">
+                    <div class="blog-image" style="background: linear-gradient(135deg, rgba(240, 147, 251, 0.3) 0%, rgba(245, 87, 108, 0.3) 100%), url('assets/images/Img3.jpg');"></div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 10, 2025</span>
+                        <h3>Sunset in Santorini</h3>
+                        <p>Experience the most breathtaking sunsets on the Greek islands.</p>
+                        <a href="pages/blog.html" class="read-more">Read Story →</a>
+                    </div>
+                </article>
+                <article class="blog-card" data-aos="fade-up">
+                    <div class="blog-image" style="background: linear-gradient(135deg, rgba(79, 172, 254, 0.3) 0%, rgba(0, 242, 254, 0.3) 100%), url('assets/images/Img3.jpg');"></div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 5, 2025</span>
+                        <h3>Northern Lights Adventure</h3>
+                        <p>Chase the magical auroras in Iceland during the winter season.</p>
+                        <a href="pages/blog.html" class="read-more">Read Story →</a>
+                    </div>
+                </article>
+            </div>
+            <div class="section-cta">
+                <a href="pages/blog.html" class="cta-button">View All Stories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Us</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item" data-aos="fade-up">
+                    <div class="feature-icon">✈️</div>
+                    <h3>Expert Curation</h3>
+                    <p>Handpicked destinations and experiences from seasoned travelers.</p>
                 </div>
-                <div class="col-md-4">
-                    <img src="Images/Img2.jpg" alt="Portfolio Image">
+                <div class="feature-item" data-aos="fade-up">
+                    <div class="feature-icon">📸</div>
+                    <h3>Stunning Visuals</h3>
+                    <p>High-quality photography and immersive storytelling.</p>
                 </div>
-                <div class="col-md-4">
-                    <img src="Images/Img3.jpg" alt="Portfolio Image">
+                <div class="feature-item" data-aos="fade-up">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Global Coverage</h3>
+                    <p>Explore destinations across all seven continents.</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up">
+                    <div class="feature-icon">💡</div>
+                    <h3>Practical Tips</h3>
+                    <p>Get insider tips and travel guides for every destination.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact text-center">
+    <!-- Newsletter Section -->
+    <section class="section newsletter">
         <div class="container">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea rows="4" placeholder="Your Message" required></textarea>
-                <button class="btn btn-light">Send Message</button>
-            </form>
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to get the latest travel stories and adventure tips delivered to your inbox</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form>
+            </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Capture Memories</h4>
+                    <p>Your journey into the world's most beautiful destinations.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/destinations.html">Destinations</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
+                        <li><a href="pages/gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: hello@capturememories.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Capture Memories. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/scroll-animations.js"></script>
 </body>
 </html>
