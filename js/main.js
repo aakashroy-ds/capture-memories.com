@@ -4,8 +4,18 @@ const settings = {
     scrollThreshold: 0.1,
 };
 
+// Update footer copyright year dynamically
+function updateFooterYear() {
+    const footerText = document.querySelector('.footer-bottom p');
+    if (footerText) {
+        const currentYear = new Date().getFullYear();
+        footerText.textContent = `\u00a9 ${currentYear} Capture Memories. All rights reserved.`;
+    }
+}
+
 // Initialize on DOM load
 document.addEventListener('DOMContentLoaded', () => {
+    updateFooterYear();
     initializeScrollAnimations();
     initializeNewsletterForm();
     handleSmoothScrolling();

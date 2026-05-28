@@ -1,0 +1,62 @@
+[
+  {
+    "id": "triberg-black-forest",
+    "title": "Exploring Triberg and the Black Forest",
+    "date": "May 6, 2026",
+    "location": "Triberg, Black Forest, Germany",
+    "readTime": "8 min read",
+    "description": "Discover the enchanting beauty of the Black Forest as we explore picturesque Triberg. From Germany's highest waterfalls cascading through dense forests to charming villages and authentic Black Forest cake, experience the perfect blend of natural wonder and German tradition.",
+    "image": "../assets/images/Img3.jpg",
+    "gradient": "linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%)"
+  },
+  {
+    "id": "interlaken-switzerland",
+    "title": "Adventure in Interlaken",
+    "date": "March 10, 2025",
+    "location": "Interlaken, Switzerland",
+    "readTime": "6 min read",
+    "description": "Experience Alpine adventure in stunning Interlaken, nestled between two beautiful lakes. Discover paragliding, hiking, and breathtaking mountain views of the Eiger, Jungfrau, and Matterhorn. A perfect blend of adrenaline and Swiss charm.",
+    "image": "../assets/images/Img3.jpg",
+    "gradient": "linear-gradient(135deg, rgba(240, 147, 251, 0.3) 0%, rgba(245, 87, 108, 0.3) 100%)"
+  },
+  {
+    "id": "french-riviera",
+    "title": "Glamour on the French Riviera",
+    "date": "March 5, 2025",
+    "location": "French Riviera, France",
+    "readTime": "10 min read",
+    "description": "Experience the elegance and charm of the Côte d'Azur. From the glitzy beaches of Cannes to the artistic streets of Nice, discover Mediterranean sunshine, world-class dining, and the glamorous lifestyle that makes the French Riviera timeless.",
+    "image": "../assets/images/Img3.jpg",
+    "gradient": "linear-gradient(135deg, rgba(79, 172, 254, 0.3) 0%, rgba(0, 242, 254, 0.3) 100%)"
+  },
+  {
+    "id": "paris-disneyland",
+    "title": "Paris Magic and Disneyland Dreams",
+    "date": "February 28, 2025",
+    "location": "Paris and Disneyland, France",
+    "readTime": "7 min read",
+    "description": "Mix romance and magic with a perfect Paris and Disneyland adventure. Explore iconic Parisian landmarks by day, then escape to enchanted Disney worlds by night. A perfect getaway combining culture, cuisine, and childhood wonder.",
+    "image": "../assets/images/Img3.jpg",
+    "gradient": "linear-gradient(135deg, rgba(250, 112, 154, 0.3) 0%, rgba(254, 225, 64, 0.3) 100%)"
+  },
+  {
+    "id": "inverness-scotland",
+    "title": "Mystical Highlands of Inverness",
+    "date": "February 20, 2025",
+    "location": "Inverness, Scotland",
+    "readTime": "9 min read",
+    "description": "Discover the wild beauty of the Scottish Highlands around Inverness. Hunt for Nessie in Loch Ness, explore ancient castles, and wander through misty glens. Experience Scottish hospitality, whisky tastings, and landscapes that feel like stepping into history.",
+    "image": "../assets/images/Img3.jpg",
+    "gradient": "linear-gradient(135deg, rgba(48, 207, 208, 0.3) 0%, rgba(51, 8, 103, 0.3) 100%)"
+  },
+  {
+    "id": "wales-adventure",
+    "title": "Welsh Wonder and Castles",
+    "date": "February 15, 2025",
+    "location": "Wales",
+    "readTime": "12 min read",
+    "description": "Explore the rugged beauty of Wales with its dramatic coastlines and majestic castles. From Snowdonia's towering peaks to charming villages and ancient Welsh culture, discover a land where history comes alive and nature steals the show.",
+    "image": "../assets/images/Img3.jpg",
+    "gradient": "linear-gradient(135deg, rgba(168, 237, 234, 0.3) 0%, rgba(254, 214, 227, 0.3) 100%)"
+  }
+]
