@@ -18,6 +18,9 @@ async function loadAndRenderBlogPosts() {
             blogGrid.appendChild(postElement);
         });
         
+        // Apply stagger animation to dynamically rendered blog cards
+        staggerAnimation('.blog-card', 0.15);
+        
         // Reinitialize animations for newly added elements
         if (typeof initializeScrollAnimations === 'function') {
             initializeScrollAnimations();
@@ -33,16 +36,51 @@ function createPostCard(post) {
     article.className = 'blog-card';
     article.setAttribute('data-aos', 'fade-up');
     
-    article.innerHTML = `
-        <div class="blog-image" style="background-image: ${post.gradient}, url('${post.image}'); background-size: cover; background-position: center;"></div>
-        <div class="blog-content">
-            <span class="blog-date">${post.date}</span>
-            <h3>${post.title}</h3>
-            <p>${post.description}</p>
-            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">📍 ${post.location} • ${post.readTime}</p>
-            <a href="#" class="read-more">Read Full Story →</a>
-        </div>
-    `;
+    // Image container with background styling
+    const imageDiv = document.createElement('div');
+    imageDiv.className = 'blog-image';
+    imageDiv.style.backgroundImage = `${post.gradient}, url('${post.image}')`;
+    imageDiv.style.backgroundSize = 'cover';
+    imageDiv.style.backgroundPosition = 'center';
+    
+    // Content container
+    const contentDiv = document.createElement('div');
+    contentDiv.className = 'blog-content';
+    
+    // Date span
+    const dateSpan = document.createElement('span');
+    dateSpan.className = 'blog-date';
+    dateSpan.textContent = post.date;
+    contentDiv.appendChild(dateSpan);
+    
+    // Title heading
+    const titleH3 = document.createElement('h3');
+    titleH3.textContent = post.title;
+    contentDiv.appendChild(titleH3);
+    
+    // Description paragraph
+    const descP = document.createElement('p');
+    descP.textContent = post.description;
+    contentDiv.appendChild(descP);
+    
+    // Location and read time info
+    const infoP = document.createElement('p');
+    infoP.style.color = 'var(--text-light)';
+    infoP.style.fontSize = '0.9rem';
+    infoP.style.marginTop = '1rem';
+    infoP.textContent = `📍 ${post.location} • ${post.readTime}`;
+    contentDiv.appendChild(infoP);
+    
+    // Read more link
+    const readMoreLink = document.createElement('a');
+    readMoreLink.href = '#';
+    readMoreLink.className = 'read-more';
+    readMoreLink.textContent = 'Read Full Story →';
+    contentDiv.appendChild(readMoreLink);
+    
+    // Assemble the card
+    article.appendChild(imageDiv);
+    article.appendChild(contentDiv);
     
     return article;
 }
