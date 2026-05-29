@@ -1,7 +1,7 @@
 // stories rendering functionality
 let allPosts = [];
 
-async function loadAndRenderstoriesPosts() {
+async function loadAndRenderStoriesPosts() {
     try {
         const response = await fetch('../data/posts.json');
         if (!response.ok) throw new Error('Failed to load posts');
@@ -200,5 +200,5 @@ function createPostCard(post) {
 
 // Load posts when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    loadAndRenderstoriesPosts();
+    loadAndRenderStoriesPosts();
 });

@@ -64,7 +64,7 @@ function createDestinationCard(destination) {
 
     // Discover More link — country is a param, not hardcoded
     const link = document.createElement('a');
-    link.href = `blog.html?country=${destination.country}`;
+    link.href = `stories.html?country=${destination.country}`;
     link.className = 'read-more';
     link.textContent = 'Discover More →';
     contentDiv.appendChild(link);

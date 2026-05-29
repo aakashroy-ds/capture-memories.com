@@ -42,7 +42,7 @@ async function loadAndRenderMarkdown(filePath, containerId) {
 
         // Handle images with responsive wrapper
         renderer.image = function(token) {
-            return `<figure class="blog-figure"><img src="${token.href}" alt="${token.text}" loading="lazy"><figcaption>${token.text}</figcaption></figure>`;
+            return `<figure class="stories-figure"><img src="${token.href}" alt="${token.text}" loading="lazy"><figcaption>${token.text}</figcaption></figure>`;
         };
 
         marked.setOptions({ renderer });

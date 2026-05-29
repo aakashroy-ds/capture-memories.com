@@ -21,7 +21,7 @@
     }
 
     .destinations-grid,
-    .blog-grid {
+    .stories-grid {
         grid-template-columns: 1fr;
     }
 
@@ -110,23 +110,23 @@
     }
 
     .destinations-grid,
-    .blog-grid,
+    .stories-grid,
     .features-grid {
         grid-template-columns: 1fr;
     }
 
     .destination-card,
-    .blog-card {
+    .stories-card {
         border-radius: 12px;
     }
 
     .destination-image,
-    .blog-image {
+    .stories-image {
         height: 200px;
     }
 
     .destination-content,
-    .blog-content {
+    .stories-content {
         padding: 1.5rem;
     }
 
@@ -144,7 +144,7 @@
         width: 100%;
     }
 
-    .blog-filter-bar {
+    .stories-filter-bar {
         padding: 0 var(--spacing-unit) 1.75rem;
         gap: 0.5rem;
     }
@@ -154,7 +154,7 @@
         font-size: 0.8rem;
     }
 
-    .blog-filter-banner {
+    .stories-filter-banner {
         padding: 0.75rem 1rem;
         font-size: 0.85rem;
     }

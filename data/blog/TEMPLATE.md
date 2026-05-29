@@ -1,4 +1,4 @@
-# Blog Post Template
+# stories Post Template
 
 **Location:** Triberg, Black Forest, Germany  
 **Date:** May 6, 2026  
@@ -15,10 +15,10 @@ Start with your introduction paragraph. Make it engaging and set the scene for r
 For inline images, use standard markdown syntax:
 
 ```
-![Alt text for image](../assets/images/blog/triberg/image-name.jpg)
+![Alt text for image](../assets/images/stories/triberg/image-name.jpg)
 ```
 
-Images are stored in `assets/images/blog/{post-slug}/` directory.
+Images are stored in `assets/images/stories/{post-slug}/` directory.
 
 ### YouTube Videos
 
@@ -63,7 +63,7 @@ You can go deep with headings as needed. Keep structure logical for easy navigat
 
 ## Related Resources
 
-- Link to other blog posts
+- Link to other stories posts
 - Reference external resources
 - Suggest next steps for readers
 
