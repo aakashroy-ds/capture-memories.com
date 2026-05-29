@@ -20,7 +20,7 @@ function staggerAnimation(selector, delay = 0.1) {
 
 document.addEventListener('DOMContentLoaded', () => {
     staggerAnimation('.destination-card', 0.15);
-    staggerAnimation('.blog-card', 0.15);
+    staggerAnimation('.stories-card', 0.15);
     staggerAnimation('.feature-item', 0.1);
 });
 

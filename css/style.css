@@ -318,8 +318,8 @@ body {
     transform: translateX(4px);
 }
 
-/* Blog Filter Bar */
-.blog-filter-bar {
+/* stories Filter Bar */
+.stories-filter-bar {
     display: flex;
     flex-wrap: wrap;
     gap: 0.625rem;
@@ -354,7 +354,7 @@ body {
 }
 
 /* Filtered view banner */
-.blog-filter-banner {
+.stories-filter-banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -384,27 +384,27 @@ body {
 }
 
 /* Empty state when no posts match filter */
-.blog-empty-state {
+.stories-empty-state {
     grid-column: 1 / -1;
     text-align: center;
     padding: 4rem 2rem;
     color: var(--text-light);
 }
 
-.blog-empty-state p {
+.stories-empty-state p {
     margin-bottom: 0.5rem;
     font-size: 1.05rem;
 }
 
-/* Blog Grid */
-.blog-grid {
+/* stories Grid */
+.stories-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 2.5rem;
     margin-bottom: 3rem;
 }
 
-.blog-card {
+.stories-card {
     background: var(--secondary-color);
     border-radius: 16px;
     overflow: hidden;
@@ -412,12 +412,12 @@ body {
     border: 1px solid var(--border-color);
 }
 
-.blog-card:hover {
+.stories-card:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
     transform: translateY(-8px);
 }
 
-.blog-image {
+.stories-image {
     width: 100%;
     height: 300px;
     background-size: cover;
@@ -425,15 +425,15 @@ body {
     transition: var(--transition);
 }
 
-.blog-card:hover .blog-image {
+.stories-card:hover .stories-image {
     transform: scale(1.05);
 }
 
-.blog-content {
+.stories-content {
     padding: 2rem;
 }
 
-.blog-date {
+.stories-date {
     font-size: 0.85rem;
     color: var(--text-light);
     font-weight: 500;
@@ -441,14 +441,14 @@ body {
     letter-spacing: 0.5px;
 }
 
-.blog-content h3 {
+.stories-content h3 {
     font-size: 1.5rem;
     margin: 1rem 0;
     font-weight: 600;
     line-height: 1.3;
 }
 
-.blog-content p {
+.stories-content p {
     color: var(--text-light);
     margin-bottom: 1.5rem;
     line-height: 1.6;
@@ -608,7 +608,7 @@ body {
 }
 
 /* Markdown Content Styling */
-.blog-post-content h1 {
+.stories-post-content h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
@@ -616,7 +616,7 @@ body {
     color: var(--text-color);
 }
 
-.blog-post-content h2 {
+.stories-post-content h2 {
     font-size: 1.75rem;
     font-weight: 600;
     margin: 2.5rem 0 1rem;
@@ -624,36 +624,36 @@ body {
     line-height: 1.3;
 }
 
-.blog-post-content h3 {
+.stories-post-content h3 {
     font-size: 1.35rem;
     font-weight: 600;
     margin: 2rem 0 0.75rem;
     color: var(--text-color);
 }
 
-.blog-post-content p {
+.stories-post-content p {
     margin-bottom: 1.5rem;
     text-align: justify;
     line-height: 1.8;
 }
 
-.blog-post-content ul, 
-.blog-post-content ol {
+.stories-post-content ul, 
+.stories-post-content ol {
     margin: 1.5rem 0 1.5rem 1.75rem;
     line-height: 1.8;
 }
 
-.blog-post-content li {
+.stories-post-content li {
     margin-bottom: 0.75rem;
     color: var(--text-light);
 }
 
-.blog-post-content strong {
+.stories-post-content strong {
     color: var(--text-color);
     font-weight: 600;
 }
 
-.blog-post-content blockquote {
+.stories-post-content blockquote {
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
     border-left: 4px solid #667eea;
     padding: 1.5rem;
@@ -663,7 +663,7 @@ body {
     color: var(--text-light);
 }
 
-.blog-post-content blockquote strong {
+.stories-post-content blockquote strong {
     font-style: normal;
 }
 
@@ -683,27 +683,27 @@ body {
 }
 
 /* Images & Figures */
-.blog-post-content img {
+.stories-post-content img {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
     display: block;
 }
 
-.blog-figure {
+.stories-figure {
     margin: 2rem 0;
     text-align: center;
     padding: 0;
 }
 
-.blog-figure img {
+.stories-figure img {
     width: 100%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.blog-figure figcaption {
+.stories-figure figcaption {
     margin-top: 0.75rem;
     font-size: 0.9rem;
     color: var(--text-light);

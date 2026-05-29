@@ -14,7 +14,7 @@
                     '<ul>' +
                         '<li><a href="' + prefix + 'index.html">Home</a></li>' +
                         '<li><a href="' + prefix + 'pages/destinations.html">Destinations</a></li>' +
-                        '<li><a href="' + prefix + 'pages/blog.html">Blog</a></li>' +
+                        '<li><a href="' + prefix + 'pages/stories.html">stories</a></li>' +
                         '<li><a href="' + prefix + 'pages/gallery.html">Gallery</a></li>' +
                         '<li><a href="' + prefix + 'pages/about.html">About</a></li>' +
                         '<li><a href="' + prefix + 'pages/contact.html">Contact</a></li>' +
@@ -23,16 +23,16 @@
                 '<div class="footer-section">' +
                     '<h4>Follow Us</h4>' +
                     '<div class="social-links">' +
-                        '<a href="https://www.instagram.com/aakashroy_capture.memories" title="Instagram"><i class="fab fa-instagram"></i></a>' +
+                        '<a href="https://www.instagram.com/aakashroy_capture.memories" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>' +
                         '<a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>' +
-                        '<a href="https://www.facebook.com/profile.php?id=100063776271467" title="Facebook"><i class="fab fa-facebook"></i></a>' +
-                        '<a href="https://www.youtube.com/@capturememories1585" title="YouTube"><i class="fab fa-youtube"></i></a>' +
+                        '<a href="https://www.facebook.com/profile.php?id=100063776271467" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>' +
+                        '<a href="https://www.youtube.com/@capturememories1585" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>' +
                         '<a href="#" title="Pinterest"><i class="fab fa-pinterest"></i></a>' +
                     '</div>' +
                 '</div>' +
                 '<div class="footer-section">' +
                     '<h4>Contact</h4>' +
-                    '<p>Email: hello@capturememories.com</p>' +
+                    '<p>Email: support@capturememories.com</p>' +
                 '</div>' +
             '</div>' +
             '<div class="footer-bottom">' +
