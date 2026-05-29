@@ -186,7 +186,7 @@ function createPostCard(post) {
 
     // Read more link
     const readMoreLink = document.createElement('a');
-    readMoreLink.href = '#';
+    readMoreLink.href = `${post.slug}.html`;
     readMoreLink.className = 'read-more';
     readMoreLink.textContent = 'Read Full Story →';
     contentDiv.appendChild(readMoreLink);
