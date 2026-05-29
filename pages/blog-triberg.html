@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Triberg and the Black Forest - Capture Memories</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+        .blog-post-hero {
+            height: 500px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%), url('../assets/images/Img3.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            margin-top: 60px;
+        }
+
+        .blog-post-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 100%);
+        }
+
+        .blog-post-hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            padding: 3rem 2rem;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .blog-post-hero-content h1 {
+            font-size: 2.75rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .blog-post-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-size: 0.95rem;
+            opacity: 0.95;
+        }
+
+        .blog-post-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .blog-post-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .blog-post-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-light);
+        }
+
+        .blog-post-content h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin: 2.5rem 0 1rem;
+            color: var(--text-color);
+            line-height: 1.3;
+        }
+
+        .blog-post-content h3 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin: 2rem 0 0.75rem;
+            color: var(--text-color);
+        }
+
+        .blog-post-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .blog-post-content ul, .blog-post-content ol {
+            margin: 1.5rem 0 1.5rem 1.75rem;
+        }
+
+        .blog-post-content li {
+            margin-bottom: 0.75rem;
+            color: var(--text-light);
+        }
+
+        .blog-highlight {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .blog-highlight strong {
+            color: var(--text-color);
+        }
+
+        .blog-image-showcase {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%), url('../assets/images/Img3.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post-content strong {
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        .travel-tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .travel-tip {
+            background: var(--secondary-color);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .travel-tip-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .travel-tip h4 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .travel-tip p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .blog-post-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            padding: 2rem;
+            background: var(--secondary-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            margin-top: 3rem;
+        }
+
+        .blog-post-footer a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .blog-post-footer a:hover {
+            transform: translateX(-4px);
+        }
+
+        .related-posts {
+            margin-top: 4rem;
+            padding-top: 3rem;
+            border-top: 2px solid var(--border-color);
+        }
+
+        .related-posts h2 {
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+        }
+
+        .related-posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .related-post-card {
+            background: var(--secondary-color);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .related-post-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .related-post-image {
+            width: 100%;
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .related-post-content {
+            padding: 1.25rem;
+        }
+
+        .related-post-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .related-post-content p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .related-post-link {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post-hero-content h1 {
+                font-size: 1.75rem;
+            }
+
+            .blog-post-meta {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .blog-image-showcase {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../index.html" class="logo">
+                    <img src="../assets/images/logo.png" alt="Capture Memories" class="logo-img">
+                </a>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <section class="blog-post-hero">
+        <div class="blog-post-hero-content">
+            <h1>Exploring Triberg and the Black Forest</h1>
+            <div class="blog-post-meta">
+                <span><i class="far fa-calendar"></i> May 6, 2026</span>
+                <span><i class="far fa-clock"></i> 8 min read</span>
+                <span><i class="fas fa-map-marker-alt"></i> Triberg, Germany</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-post-container">
+        <article class="blog-post-content" id="blog-content">
+            <!-- Markdown content will be loaded here -->
+        </article>
+
+        <!-- Post Footer with Navigation -->
+        <div class="blog-post-footer">
+            <a href="blog.html?country=germany">
+                <i class="fas fa-chevron-left"></i> Back to Germany Stories
+            </a>
+            <a href="blog.html">
+                View All Stories <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+        <!-- Related Posts -->
+        <div class="related-posts">
+            <h2>Explore More Travel Stories</h2>
+            <div class="related-posts-grid">
+                <div class="related-post-card">
+                    <div class="related-post-image" style="background-image: linear-gradient(135deg, rgba(240, 147, 251, 0.3) 0%, rgba(245, 87, 108, 0.3) 100%), url('../assets/images/Img3.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="related-post-content">
+                        <h3>Adventure in Interlaken</h3>
+                        <p>Experience Alpine adventure in stunning Interlaken, nestled between two beautiful lakes.</p>
+                        <a href="blog-interlaken.html" class="related-post-link">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="related-post-card">
+                    <div class="related-post-image" style="background-image: linear-gradient(135deg, rgba(250, 112, 154, 0.3) 0%, rgba(254, 225, 64, 0.3) 100%), url('../assets/images/Img3.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="related-post-content">
+                        <h3>Paris Magic and Disneyland Dreams</h3>
+                        <p>Mix romance and magic with a perfect Paris and Disneyland adventure.</p>
+                        <a href="blog-paris.html" class="related-post-link">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="related-post-card">
+                    <div class="related-post-image" style="background-image: linear-gradient(135deg, rgba(48, 207, 208, 0.3) 0%, rgba(51, 8, 103, 0.3) 100%), url('../assets/images/Img3.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="related-post-content">
+                        <h3>Mystical Highlands of Inverness</h3>
+                        <p>Discover the wild beauty of the Scottish Highlands around Inverness.</p>
+                        <a href="blog-inverness.html" class="related-post-link">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="site-footer"></footer>
+
+    <!-- Marked.js library for markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script src="../js/footer.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/scroll-animations.js"></script>
+    <script src="../js/markdown-renderer.js"></script>
+
+    <script>
+        // Load and render the markdown content when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            loadAndRenderMarkdown('../data/blog/triberg-black-forest.md', 'blog-content');
+        });
+    </script>
+</body>
+</html>
