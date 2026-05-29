@@ -323,7 +323,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 0.625rem;
-    padding: 0 0 1.75rem;
+    padding: 0 var(--spacing-unit) 1.75rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .filter-chip {
@@ -362,7 +364,8 @@ body {
     border: 1px solid rgba(102, 126, 234, 0.25);
     border-radius: 12px;
     padding: 0.875rem 1.25rem;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
+    max-width: 1200px;
     font-size: 0.95rem;
     color: var(--text-color);
 }
