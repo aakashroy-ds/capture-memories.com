@@ -318,6 +318,81 @@ body {
     transform: translateX(4px);
 }
 
+/* Blog Filter Bar */
+.blog-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    padding: 0 0 1.75rem;
+}
+
+.filter-chip {
+    padding: 0.45rem 1.1rem;
+    border-radius: 999px;
+    border: 1.5px solid var(--border-color);
+    background: var(--secondary-color);
+    color: var(--text-light);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: inherit;
+}
+
+.filter-chip:hover {
+    border-color: #667eea;
+    color: #667eea;
+}
+
+.filter-chip.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-color: transparent;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Filtered view banner */
+.blog-filter-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    border: 1px solid rgba(102, 126, 234, 0.25);
+    border-radius: 12px;
+    padding: 0.875rem 1.25rem;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.filter-banner-clear {
+    font-size: 0.85rem;
+    color: #667eea;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.filter-banner-clear:hover {
+    opacity: 0.75;
+}
+
+/* Empty state when no posts match filter */
+.blog-empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-light);
+}
+
+.blog-empty-state p {
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+}
+
 /* Blog Grid */
 .blog-grid {
     display: grid;

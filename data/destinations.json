@@ -1,0 +1,80 @@
+[
+  {
+    "id": "highlands-scotland",
+    "name": "Highlands, Scotland",
+    "country": "scotland",
+    "description": "Experience the rugged beauty of the Scottish Highlands with ancient castles, scenic landscapes, and rich history. Perfect for adventure seekers and history enthusiasts.",
+    "highlights": [
+      "🏰 Ancient Castles",
+      "🏞️ Scenic Landscapes",
+      "🥾 Outdoor Adventures"
+    ],
+    "image": "../assets/images/Img1.jpg",
+    "gradient": "linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%)"
+  },
+  {
+    "id": "swiss-alps",
+    "name": "Swiss Alps",
+    "country": "switzerland",
+    "description": "Majestic mountain peaks, charming villages, and breathtaking landscapes. Ideal for hiking, skiing, and experiencing Alpine beauty at its finest.",
+    "highlights": [
+      "⛷️ World-class Skiing",
+      "🥾 Scenic Hiking",
+      "🏔️ Stunning Views"
+    ],
+    "image": "../assets/images/Img3.jpg",
+    "gradient": "linear-gradient(135deg, rgba(240, 147, 251, 0.3) 0%, rgba(245, 87, 108, 0.3) 100%)"
+  },
+  {
+    "id": "london-england",
+    "name": "London, England",
+    "country": "england",
+    "description": "Explore the historic landmarks and vibrant culture of London. From iconic attractions to hidden gems, the city offers a rich tapestry of experiences for every traveler.",
+    "highlights": [
+      "🏰 Historic Landmarks",
+      "🎭 Cultural Experiences",
+      "🌆 Vibrant City Life"
+    ],
+    "image": "../assets/images/Img2.jpg",
+    "gradient": "linear-gradient(135deg, rgba(79, 172, 254, 0.3) 0%, rgba(0, 242, 254, 0.3) 100%)"
+  },
+  {
+    "id": "paris-france",
+    "name": "Paris, France",
+    "country": "france",
+    "description": "The City of Light captivates with iconic landmarks, world-class museums, and exquisite cuisine. A romantic getaway for art lovers and culture enthusiasts.",
+    "highlights": [
+      "🗼 Iconic Landmarks",
+      "🎨 World-class Art",
+      "🍷 Fine Dining"
+    ],
+    "image": "../assets/images/Img3.jpg",
+    "gradient": "linear-gradient(135deg, rgba(250, 112, 154, 0.3) 0%, rgba(254, 225, 64, 0.3) 100%)"
+  },
+  {
+    "id": "tokyo-japan",
+    "name": "Tokyo, Japan",
+    "country": "japan",
+    "description": "A mesmerizing blend of ancient traditions and cutting-edge modernity. Experience serene temples, bustling streets, and incredible street food.",
+    "highlights": [
+      "🏯 Ancient Temples",
+      "🍜 Amazing Food",
+      "🌆 Modern City"
+    ],
+    "image": "../assets/images/Img3.jpg",
+    "gradient": "linear-gradient(135deg, rgba(48, 207, 208, 0.3) 0%, rgba(51, 8, 103, 0.3) 100%)"
+  },
+  {
+    "id": "new-york-usa",
+    "name": "New York City",
+    "country": "usa",
+    "description": "The city that never sleeps offers endless entertainment, iconic landmarks, world-renowned restaurants, and vibrant neighborhoods to explore.",
+    "highlights": [
+      "🗽 Iconic Skyline",
+      "🎭 Broadway Shows",
+      "🏙️ Urban Culture"
+    ],
+    "image": "../assets/images/Img3.jpg",
+    "gradient": "linear-gradient(135deg, rgba(168, 237, 234, 0.3) 0%, rgba(254, 214, 227, 0.3) 100%)"
+  }
+]
